@@ -62,7 +62,7 @@ function HomeLayout({ children }) {
 
                     {openDrawer ?
 
-
+                        // ---------------- more content sidebar-----------------
                         <div className="flex flex-col px-3 py-5 text-sm text-center h-[90vh] overflow-y-scroll-[15%]">
                             <div className="border-b border-[#262626] my-3">
                                 <div className="flex items-center gap-6 w-full bg-[#262626] px-5 py-2 rounded-md"> <IoHome className="text-xl"/> <span>Home</span></div>
@@ -97,6 +97,7 @@ function HomeLayout({ children }) {
                         </div>
 
                         :
+                        // -------------------less content sidebar
                         <div className="flex flex-col px-2 py-5 gap-8 text-[10px] text-center w-[5%] ">
                             <div><IoHome className="text-lg w-full" /><p>Home</p></div>
                             <div><SiYoutubeshorts className="text-lg w-full" /> <p>Shorts</p> </div>
