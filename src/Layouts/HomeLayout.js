@@ -27,21 +27,21 @@ function HomeLayout({ children }) {
         <div className="bg-[#0f0f0f] text-white ">
 
             {/*---- navbar ------ */}
-            <div className="navbar min-h-8 px-6 py-1 text-xs  bg-[#0f0f0f] z-50  ">
+            <div className="navbar min-h-8 px-2 sm:px-6 py-1 text-xs  bg-[#0f0f0f] z-50  ">
                 <div className="flex justify-between items-center w-[100vw]">
                     <div className="flex justify-center items-center">
-                        <div onClick={() => setOpenDrawer(!openDrawer)} ><RxHamburgerMenu className="text-lg" /></div>
-                        <a className="flex justify-center items-center mx-5 text-white font-semibold font-serif text-sm"><FaYoutube className="text-red-600 text-2xl" />YouTube2<sup><sup>IN</sup></sup></a>
+                        <div onClick={() => setOpenDrawer(!openDrawer)} ><RxHamburgerMenu className="text-sm sm:text-lg" /></div>
+                        <a className="flex justify-center items-center mx-5 text-white font-semibold font-serif text-xs sm:text-sm "><FaYoutube className="text-red-600 text-2xl" />YouTube2<sup><sup>IN</sup></sup></a>
                     </div>
-                    <div className=" flex  w-2/5 text-white">
-                        <div onFocus={() => setOnFocus(true)} onBlur={() => setOnFocus(false)} className={` w-[88%] border rounded-l-full border-r-0 border-gray-500 px-4 ${onFocus ? "border-sky-800" : ""} `}>
+                    <div className=" flex  sm:w-2/5 text-white">
+                        <div onFocus={() => setOnFocus(true)} onBlur={() => setOnFocus(false)} className={` max-[640px]:hidden  w-[88%] border rounded-l-full border-r-0 border-gray-500 px-4 ${onFocus ? "border-sky-800" : ""} `}>
                             {onFocus ? <CiSearch className="inline text-lg " /> : ""}
                             <input type="text" placeholder="Search" className="bg-transparent outline-none px-4   py-2 text-sm   " />
 
                         </div>
-                        <div className=" bg-[#262626] text-xl w-[12%] border rounded-r-full border-gray-500 flex items-center justify-center "><CiSearch /></div>
+                        <div className=" bg-[#262626] text-xl sm:w-[12%] border rounded-r-full border-gray-500 flex items-center justify-center max-[640px]:border-none max-[640px]:bg-transparent"><CiSearch /></div>
 
-                        <div className="text-xl py-2 px-2  mx-3 bg-[#262626]   rounded-full"><MdKeyboardVoice /></div>
+                        <div className="max-[640px]:bg-transparent text-xl py-2 px-2  mx-3 bg-[#262626] rounded-full"><MdKeyboardVoice /></div>
                     </div>
                     <div className="text-white p-2 flex items-center text-lg gap-4">
                         <div><RiVideoAddLine /></div>
@@ -57,13 +57,10 @@ function HomeLayout({ children }) {
                 <div className="flex w-[98vw] ">
                     {/* ------------sidebar---------- */}
 
-
-
-
                     {openDrawer ?
 
                         // ---------------- more content sidebar-----------------
-                        <div className="flex flex-col px-3 py-5 text-sm text-center h-[90vh] overflow-y-scroll-[15%]">
+                        <div className=" max-[640px]:bg-[#0f0f0f] z-50 flex flex-col px-3 py-5 text-xs sm:text-sm text-center h-[90vh] overflow-y-scroll max-[640px]:absolute max-[640px]:top-10 max-[640px]:left-0   ">
                             <div className="border-b border-[#262626] my-3">
                                 <div className="flex items-center gap-6 w-full bg-[#262626] px-5 py-2 rounded-md"> <IoHome className="text-xl"/> <span>Home</span></div>
                                 <div className="flex items-center gap-6 w-full px-5 py-2 rounded-md hover:bg-[#262626]"> <SiYoutubeshorts className="text-xl"/> <span>Shorts</span></div>
@@ -98,7 +95,7 @@ function HomeLayout({ children }) {
 
                         :
                         // -------------------less content sidebar
-                        <div className="flex flex-col px-2 py-5 gap-8 text-[10px] text-center w-[5%] ">
+                        <div className=" md:flex flex-col px-2 py-5 gap-8 text-[10px] text-center w-[5%] hidden ">
                             <div><IoHome className="text-lg w-full" /><p>Home</p></div>
                             <div><SiYoutubeshorts className="text-lg w-full" /> <p>Shorts</p> </div>
                             <div><MdSubscriptions className="text-lg w-full" /> <p>Subscription</p></div>
@@ -110,7 +107,7 @@ function HomeLayout({ children }) {
 
                     {/* -------------------------Content------------------------- */}
 
-                    <div className={openDrawer?"w-[85%]":"w-[95%]"}>
+                    <div className={openDrawer?"w-[85%] max-[640px]:w-[95%] ":"w-[95%]"}>
                         {children}
                     </div>
                 </div>

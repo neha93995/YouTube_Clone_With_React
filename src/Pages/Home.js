@@ -6,18 +6,18 @@ function Home() {
             <div className=' px-5 relative '>
 
                 <div className=' sticky top-12 z-40 py-3 bg-[#0f0f0f] font-bold'>
-                    <div className=" flex gap-2 text-sm  ">
+                    <div className=" flex gap-2 text-sm flex-wrap">
                       
                       
                         <div className="bg-[#262626] hover:bg-[#4a4b4b] py-1 px-2 rounded-md">All</div>
                         <div className="bg-[#262626] hover:bg-[#4a4b4b] py-1 px-2 rounded-md">Gaming</div>
                         <div className="bg-[#262626] hover:bg-[#4a4b4b] py-1 px-2 rounded-md">Mixes</div>
-                        <div className="bg-[#262626] hover:bg-[#4a4b4b] py-1 px-2 rounded-md">computer programming</div>
+                        {/* <div className="bg-[#262626] hover:bg-[#4a4b4b] py-1 px-2 rounded-md">computer programming</div>
                         <div className="bg-[#262626] hover:bg-[#4a4b4b] py-1 px-2 rounded-md">Music</div>
                         <div className="bg-[#262626] hover:bg-[#4a4b4b] py-1 px-2 rounded-md">Movies</div>
                         <div className="bg-[#262626] hover:bg-[#4a4b4b] py-1 px-2 rounded-md">Live</div>
                         <div className="bg-[#262626] hover:bg-[#4a4b4b] py-1 px-2 rounded-md">Lecture</div>
-                        <div className="bg-[#262626] hover:bg-[#4a4b4b] py-1 px-2 rounded-md">News</div>
+                        <div className="bg-[#262626] hover:bg-[#4a4b4b] py-1 px-2 rounded-md">News</div> */}
                         
                         
                     </div>
