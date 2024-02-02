@@ -1,3 +1,4 @@
+import Card from "../Components/Card";
 import HomeLayout from "../Layouts/HomeLayout";
 
 function Home() {
@@ -26,11 +27,33 @@ function Home() {
 
                 <div className="h-[80vh] overflow-y-scroll ">
                   
-                    <div>nestill need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+                    <div className=" grid max-[640px]:grid-cols-1 sm:grid-cols-2  md:grid-cols-3  lg:grid-cols-4 gap-4">
 
-webpack compiled with 1 warningneed the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+                        {/* --------------------Cards------------ */}
 
-webpack compiled with 1 warninghaha</div>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+
+
+                    </div>
               
                 </div>
 
