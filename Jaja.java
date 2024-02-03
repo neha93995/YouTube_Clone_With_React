@@ -52,6 +52,10 @@ public class Jaja {
         // }
 
 
+        
+        System.out.println(" ज्ञानवापी पर विवाद, व");
+        System.out.println((char)905);
+
         for(int i=1; i<=n; i++)
         {
             for(int j=1; j<=n; j++)
