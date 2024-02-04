@@ -53,3 +53,7 @@ body{
 .overflow-x-scroll::-webkit-scrollbar{
   width: 0;
 }
+
+a{
+  cursor: pointer;
+}

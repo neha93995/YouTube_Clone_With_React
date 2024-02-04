@@ -1,4 +1,25 @@
 public class Jaja {
+
+
+    public Jaja(){}
+    public static void name(String name)
+    {
+        System.out.println(name);
+    }
+    public static void name2(String name2)
+    {
+        System.out.println(name2);
+    }
+
+    public static void age(int age)
+    {
+        System.out.println(age);
+    }
+
+    public static Jaja builder()
+    {
+        return new Jaja();
+    }
     public static void main(String args[])
     {
 
@@ -52,9 +73,7 @@ public class Jaja {
         // }
 
 
-        
-        System.out.println(" ज्ञानवापी पर विवाद, व");
-        System.out.println((char)905);
+
 
         for(int i=1; i<=n; i++)
         {
@@ -100,5 +119,7 @@ public class Jaja {
             System.out.println();
         }
 
+
+    
     }
 }
