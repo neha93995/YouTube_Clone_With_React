@@ -5,7 +5,7 @@ function Shorts()
 {
     return (
         <HomeLayout>
-                <div className="flex flex-col items-center  overflow-y-scroll border border-red-900 h-[92vh]">
+                <div className="flex flex-col items-center  overflow-y-scroll  h-[92vh]">
                     <ShortsCard/>
                     <ShortsCard/>
                     <ShortsCard/>

@@ -61,7 +61,7 @@ function HomeLayout({ children }) {
                     {openDrawer ?
 
                         // ---------------- more content sidebar-----------------
-                        <div className=" max-[640px]:bg-[#0f0f0f] z-50 flex flex-col px-3 py-5 text-xs sm:text-sm text-center h-[90vh] overflow-y-scroll max-[640px]:absolute max-[640px]:top-10 max-[640px]:left-0   ">
+                        <div className=" max-[640px]:bg-[#0f0f0f] z-50 flex flex-col px-3  text-xs sm:text-sm text-center h-[90vh] overflow-y-scroll max-[640px]:absolute max-[640px]:top-10 max-[640px]:left-0   ">
                             <div className="border-b border-[#262626] my-3">
                                 <div className="flex items-center gap-6 w-full bg-[#262626] px-5 py-2 rounded-md"> <IoHome className="text-xl"/> <span>Home</span></div>
                                 <div className="flex items-center gap-6 w-full px-5 py-2 rounded-md hover:bg-[#262626]"> <SiYoutubeshorts className="text-xl"/> <span>Shorts</span></div>
